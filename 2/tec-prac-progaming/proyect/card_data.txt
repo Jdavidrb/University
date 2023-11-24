@@ -1,0 +1,20 @@
+Escudo, Esta carta permite al jugador bloquear 15 puntos de dano. Consume 1 punto de energia., defensa, 1, 15
+Barrera, Esta carta permite al jugador crear una barrera mágica que bloquea 20 puntos de dano. Consume 2 puntos de energia., defensa, 2, 20
+Espejo, Esta carta permite al jugador reflejar el dano que recibe al oponente. Consume 3 puntos de energia., defensa, 3, 1
+Curacion, Esta carta permite al jugador recuperar 10 puntos de vida. Consume 1 punto de energia., habilidad, 1, 10
+Regeneracion, Esta carta permite al jugador recuperar 5 puntos de vida por cada turno. Consume 2 puntos de energia., habilidad, 2, 5
+Teletransporte, Esta carta permite al jugador esquivar el proximo ataque del oponente. Consume 2 puntos de energia., habilidad, 2, 1
+Invisibilidad, Esta carta permite al jugador evitar que el oponente le ataque durante dos turnos. Consume 3 puntos de energia., habilidad, 3, 1
+Fuego fatuo, Esta carta permite al jugador invocar una llama que causa 15 puntos de dano. Consume 1 punto de energia., habilidad, 1, 15
+Rayo de luz, Esta carta permite al jugador disparar un rayo de luz que causa 18 puntos de dano. Consume 1 punto de energia., habilidad, 1, 18
+Explosion, Esta carta permite al jugador detonar una bomba que causa 24 puntos de dano. Consume 2 puntos de energia., habilidad, 2, 24
+Ataque fuerte, Esta carta permite al jugador infligir 30 puntos de dano. Consume 2 puntos de energia.,ataque, 30, 2
+Rayos, Esta carta permite al jugador lanzar un rayo que causa 22 puntos de dano. Consume 1 punto de energia.,ataque, 22, 1
+Llamarada, Esta carta permite al jugador desatar una llamarada que causa 25 puntos de dano. Consume 1 punto de energia.,ataque, 25, 1
+Congelacion, Esta carta permite al jugador congelar al oponente, causando 21 puntos de dano. Consume 1 punto de energia.,ataque, 21, 1
+Veneno, Esta carta permite al jugador envenenar al oponente, causando 20 puntos de dano. Consume 1 punto de energia.,ataque, 20, 1
+Terremoto, Esta carta permite al jugador desatar un terremoto que causa 19 puntos de dano. Consume 1 punto de energia.,ataque, 19, 1
+Tornado, Esta carta permite al jugador convocar un tornado que causa 21 puntos de dano. Consume 2 puntos de energia.,ataque, 21, 2
+Inundacion, Esta carta permite al jugador causar una inundacion que causa 25 puntos de dano. Consume 3 puntos de energia.,ataque, 25, 3
+Tormenta de arena, Esta carta permite al jugador desatar una tormenta de arena que causa 40 puntos de dano. Consume 2 puntos de energia.,ataque, 40, 2
+Erupcion volcanica, Esta carta permite al jugador provocar una erupcion volcanica que causa 36 puntos de dano. Consume 2 puntos de energia.,ataque, 36, 2

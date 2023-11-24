@@ -1,0 +1,21 @@
+Drako,Un dragón rojo que escupe fuego,jefe,vivo,1000
+Zara,Una bruja malvada que lanza hechizos oscuros,jefe,vivo,800
+Rex,Un tiranosaurio rex que aplasta todo a su paso,jefe,vivo,1200
+Lobo,Un lobo feroz que ataca con sus colmillos,elite,vivo,300
+Cobra,Una serpiente venenosa que se desliza rápidamente,elite,vivo,250
+Golem,Una criatura de piedra que golpea con sus puños,elite,vivo,400
+Arpía,Una criatura alada con garras y pico,elite,vivo,300
+Troll,Un ser enorme y feo que regenera sus heridas,elite,vivo,450
+Banshee,Una mujer fantasmal que lanza gritos mortales,elite,vivo,300
+Ogro,Un gigante tonto y fuerte que come carne humana,elite,vivo,500
+Duende,Un ser pequeño y travieso que roba objetos,normal,vivo,100
+Rata,Un roedor sucio y portador de enfermedades,normal,vivo,50
+Murciélago,Un animal nocturno que vuela y muerde,normal,vivo,75
+Araña,Un insecto venenoso que teje telarañas,normal,vivo,100
+Gnomo,Un habitante de los bosques que usa magia natural,normal,vivo,150
+Esqueleto,Un cadáver reanimado que usa armas y armaduras,normal,vivo,200
+Zombie,Un muerto viviente que busca carne fresca,normal,vivo,250
+Goblin,Un ser verde y astuto que usa trampas y armas,normal,vivo,200
+Slime,Una masa gelatinosa que absorbe lo que toca,normal,vivo,150
+Sapo,Un anfibio que salta y escupe veneno,normal,vivo,100
+Cuervo,Un pájaro negro que grazna y pica,normal,vivo,50
