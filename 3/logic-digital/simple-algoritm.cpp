@@ -18,4 +18,5 @@ int main() {
     cout << "La suma de los números pares es: " << sumaDePares << endl;
     return 0;
 }
-// sexo
+
+// maincra
