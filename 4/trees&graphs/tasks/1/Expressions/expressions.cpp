@@ -19,7 +19,6 @@ La inserción y eliminación en la cola son operaciones O(1). Sin embargo, la op
 Así, tendríamos que la complejidad temporal total del algoritmo es O(n + m^2). En el caso promedio, n y m son equivalentes, por lo que la complejidad puede ser aproximada a O(n^2).
 
 */
-
 #include <iostream>
 #include <string>
 #include <stack>
@@ -40,48 +39,57 @@ public:
     }
 };
 
-TreeNode* constructTree(const string & line) {
-    stack<TreeNode*> st;
-    for (int i = 0; i < line.length(); ++i) {
-        char letter = line[i];
+class ExpressionTree {
+private:
+    TreeNode* root;
 
-        if (islower(letter)) {
-            st.push(new TreeNode(letter));
-        } else {
-            
-            TreeNode* node = new TreeNode(letter);
-            TreeNode* right = st.top(); st.pop();
-            TreeNode* left = st.top(); st.pop();
-            
-
-            node->left = left;
-            node->right = right;
-            st.push(node);
+    TreeNode* constructTree(const string& line) {
+        stack<TreeNode*> st;
+        for (char letter : line) {
+            if (islower(letter)) {
+                st.push(new TreeNode(letter));
+            } else {
+                TreeNode* node = new TreeNode(letter);
+                TreeNode* right = st.top(); st.pop();
+                TreeNode* left = st.top(); st.pop();
+                node->left = left;
+                node->right = right;
+                st.push(node);
+            }
         }
-    }
-    return st.top();
-}
-
-string levelOrder(TreeNode* root) {
-    string ans;
-    if (!root){
-        ans = "";
-    } 
-
-    queue<TreeNode*> q;
-    q.push(root);
-
-    while (!q.empty()) {
-        TreeNode* node = q.front();
-        q.pop();
-        ans.insert(ans.begin(), node->value);
-
-        if (node->left) q.push(node->left);
-        if (node->right) q.push(node->right);
+        return st.top();
     }
 
-    return ans;
-}
+    string levelOrder(TreeNode* root) {
+        string ans;
+        if (!root) {
+            return ans;
+        }
+
+        queue<TreeNode*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            TreeNode* node = q.front();
+            q.pop();
+            ans.insert(ans.begin(), node->value);
+
+            if (node->left) q.push(node->left);
+            if (node->right) q.push(node->right);
+        }
+
+        return ans;
+    }
+
+public:
+    ExpressionTree(const string& expression) {
+        root = constructTree(expression);
+    }
+
+    string getLevelOrder() {
+        return levelOrder(root);
+    }
+};
 
 int main() {
     int T;
@@ -89,9 +97,10 @@ int main() {
     while (T--) {
         string line;
         cin >> line;
-        TreeNode* root = constructTree(line);
-        string transformedExpression = levelOrder(root);
+        ExpressionTree tree(line);
+        string transformedExpression = tree.getLevelOrder();
         cout << transformedExpression << endl;
     }
     return 0;
 }
+
